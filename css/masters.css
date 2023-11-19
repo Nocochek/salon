@@ -1,0 +1,197 @@
+body {
+  font-family: "EB Garamond", serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+  border-bottom: 1px solid rgba(195, 190, 190, 0.6039215686);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.header-content {
+  padding-bottom: 25px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav ul .active {
+  color: #cdaa7d;
+}
+.nav ul li {
+  margin: 0 60px;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.4s ease-out;
+  font-size: 20px;
+}
+.nav ul li:hover {
+  color: #bdbdbd;
+  text-decoration: underline;
+}
+.nav ul li a {
+  color: #ffffff;
+}
+
+.kosm {
+  margin-right: 40px;
+}
+
+.intro {
+  margin-bottom: 35px;
+  padding-top: 200px;
+}
+.intro h1 {
+  text-align: center;
+  position: relative;
+  left: 170px;
+  font-size: 72px;
+  font-weight: 700;
+  width: 900px;
+}
+
+.intro-setting {
+  transition: 0.2s ease-in;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background: var(--bgc, #111);
+  z-index: 5;
+}
+.intro-setting.active {
+  width: 400px;
+}
+.intro-setting.active .intro-setting-body {
+  opacity: 1;
+}
+.intro-setting .intro-setting-body {
+  opacity: 0;
+  padding: 40px 80px;
+}
+.intro-setting .intro-setting-body img {
+  cursor: pointer;
+}
+.intro-setting .intro-setting-body p {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.setting-footer {
+  display: flex;
+  flex-direction: column;
+}
+.setting-footer h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.setting-footer a {
+  color: rgba(255, 255, 255, 0.7294117647);
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+.setting-footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+#burger {
+  cursor: pointer;
+}
+
+.masters-cont {
+  display: flex;
+}
+.masters-cont .masters-item {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.masters-cont .masters-item P {
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.masters-cont .masters-item .Makeup {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.389);
+}
+
+.footer {
+  margin-top: 50px;
+}
+.footer .footer-content {
+  padding: 80px 0;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.613);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.613);
+  display: flex;
+  justify-content: space-between;
+}
+
+.fot-contacts img {
+  margin-top: 20px;
+}
+.fot-contacts h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.fot-contacts a {
+  display: block;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6470588235);
+  transition: 0.4s ease-in-out;
+}
+.fot-contacts a:hover {
+  color: #ffffff;
+}
+
+.foot-text {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=masters.css.map */
